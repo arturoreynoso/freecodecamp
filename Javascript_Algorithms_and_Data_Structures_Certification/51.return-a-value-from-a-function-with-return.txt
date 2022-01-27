@@ -1,0 +1,3 @@
+function timesFive(param1) {
+  return 5*param1;
+}
