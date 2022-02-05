@@ -1,0 +1,11 @@
+function rangeOfNumbers(startNum, endNum) {
+  let myArray = [];
+  if (startNum == endNum) {
+    myArray.push(startNum);
+    return myArray;
+  } else {
+    let arr = rangeOfNumbers(startNum, endNum - 1);
+    arr.push(endNum);
+    return arr;
+  }
+}
