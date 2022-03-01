@@ -1,13 +1,20 @@
+<!DOCTYPE html>
+
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="tribute_page.css">
 
-
+<body>
 <main id="main" class="silver-background">
   <h1 id="title">J.R.R. Tolkien</h1>
   <p>The man who created Middle Earth</p>
 
-<figure id="img-div"><img src="https://i0.wp.com/elanillounico.com/wp-content/uploads/2015/03/JRR-Tolkien15.jpg?resize=723%2C1024&ssl=1" style="width: 500px" class="thin-green-border">
+<figure id="img-div">
+  <img src="https://i0.wp.com/elanillounico.com/wp-content/uploads/2015/03/JRR-Tolkien15.jpg?resize=723%2C1024&ssl=1" id = "image" style="width: 500px" class="thin-green-border">
+    <figcaption id="img-caption">
+      J.R.R. Tolkien, smoking tobacco with a pipe.
+    </figcaption>
 </figure>
-<p><strong>Here's a timeline of Tolkien's life:</strong></p>
+<section id="tribute-info">      <h3><strong>Here's a timeline of Tolkien's life:</strong></h3>
 <ul>
   <li>
     <strong>1892</strong> - Born in Bloemfontain, South Africa</li>
@@ -22,6 +29,7 @@
   <li>
     <strong>1930</strong> - Begins to work in "The Hobbit" book, a children's fantasy novel. Follows the quest of home-loving Bilbo Baggins, the titular hobbit, to win a share of the treasure guarded by a dragon named Smaug</li>
 </ul>
+</section>
     <blockquote
       cite="https://www.brainyquote.com/quotes/j_r_r_tolkien_629215"
     >
@@ -31,6 +39,39 @@
       <cite>-- J.R.R. Tolkien</cite>
     </blockquote>
 
-<h3><strong>If you have time, you should read more about this incredible human being in his <a href="https://en.wikipedia.org/wiki/J._R._R._Tolkien">Wikipedia page</a>.</strong></h3>
-  
+    <h3><strong> Some of Tolkien's books:</strong></h3>
+</section> 
+<section class="gallery">
+  <div>
+      <input type="radio" id="img-1" checked name="gallery" class="gallery__selector"/>
+      <img class="gallery__img" src="the_fellowship_of_the_ring300450.jpg"/>
+      <label for="img-1" class="gallery__thumb">
+          <img src="the_fellowship_of_the_ring150200.jpg" />
+      </label>
+  </div>    
+  <div>
+      <input type="radio" id="img-2" name="gallery" class="gallery__selector"/>
+      <img class="gallery__img" src="the_silmarillion300450.jpg" />
+      <label for="img-2" class="gallery__thumb">
+          <img src="the_silmarillion150200.jpg" />
+      </label>
+  </div>  
+  <div>
+      <input type="radio" id="img-3" name="gallery" class="gallery__selector"/>
+      <img class="gallery__img" src="the_two_towers300450.jpg" />
+      <label for="img-3" class="gallery__thumb">
+          <img src="the_two_towers150200.jpg" />
+      </label>
+  </div>  
+  <div>
+      <input type="radio" id="img-4" name="gallery" class="gallery__selector"/>
+      <img class="gallery__img" src="the_hobbit300450.jpg" />
+      <label for="img-4" class="gallery__thumb">
+          <img src="the_hobbit150200.jpg" />
+      </label>
+  </div>  
+</section>
+<h3><strong>If you have time, you should read more about this incredible human being in his <a id = "tribute-link" target= "_blank" href="https://en.wikipedia.org/wiki/J._R._R._Tolkien">Wikipedia page</a>.</strong></h3>
 </main>
+</body>
+</html>
